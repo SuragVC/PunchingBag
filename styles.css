@@ -13,7 +13,7 @@ body{
 }
 .mainBox{
     width: 500px;
-    border: solid red;
+    border: solid white;
 }
 img{
     width: 200px;
@@ -22,7 +22,6 @@ img{
 .imageBox{
     width: 500px;
     height: 450px;
-    border: solid green;
 }
 .buttonBox{
     display: flex;
@@ -33,13 +32,11 @@ button{
     height: 60px;
 }
 .visionBox{
-    border: solid gray;
     height: 50px;
 }
-.punchedView{
+#punchedView{
     height: 30px;
     background-color: tomato;
-    width: 50px;
     margin-top: 10px;
-    margin-left: 80px;
+    margin-left: 120px;
 }
