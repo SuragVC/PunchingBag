@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-js PunchBag</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="vueStyles.css"/>
+</head>
+<body>
+    <div id="vue-app">
+        <div class="container centerBox">
+            <div class="mainBox">
+                <div class="imageBox centerBox">
+                    <img id="image" v-bind:src="imageUrl" alt="normal bag">
+                </div>
+                <div class="visionBox">
+                    <div id="punchedView" v-bind:style={width:`${width}px`}></div>
+                </div>
+                <div class="buttonBox">
+                    <button id="punch" v-on:click="punchBag">{{punch}}</button>
+                    <button id="replace" v-on:click="replaceBag">{{replace}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="vueScript.js"></script>
