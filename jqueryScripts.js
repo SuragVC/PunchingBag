@@ -1,18 +1,18 @@
 $(function(){
     var width = 250;
-    var view = $("#punchedView")
-    view.css({"width":width})
     var image = $("img");
+    var view = $("#punchedView");
+    view.css({"width":width});
     $("#punch").click(function(){
         width=width-50;
-        view.css({"width":width})
+        view.css({"width":width});
         if(width==0){
-            image.attr({"src":"images/broken.jpeg"})
-        }
+            image.attr({"src":"images/broken.jpeg"});
+        };
     })
     $("#replace").click(function(){
         width=250;
-        view.css({"width":width})
-        image.attr({"src":"images/normal.jpeg"})
+        view.css({"width":width});
+        image.attr({"src":"images/normal.jpeg"});
     })
 })
